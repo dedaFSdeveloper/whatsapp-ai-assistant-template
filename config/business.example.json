@@ -1,0 +1,55 @@
+{
+  "name": "Bright Smile Dental Studio",
+  "description": "A fictional neighbourhood dental clinic used as an example. Replace everything in this file with your own business data.",
+  "assistantName": "Sonia",
+  "tone": "Warm, brief and professional. Short WhatsApp-style messages, no more than 3 short paragraphs. At most one emoji.",
+  "language": "Reply in the same language the customer writes in.",
+  "contact": {
+    "address": "123 Example Street, Springfield (fictional)",
+    "phone": "+1 555 0100 (fictional)",
+    "hours": "Monday to Friday 9:00-19:00, Saturday 9:00-13:00. Closed on Sundays and public holidays."
+  },
+  "services": [
+    { "id": "checkup", "name": "Check-up and cleaning", "price": "USD 60", "duration": "45 min" },
+    { "id": "whitening", "name": "Teeth whitening", "price": "From USD 180", "duration": "60 min" },
+    { "id": "orthodontics", "name": "Orthodontics consultation", "price": "USD 40", "duration": "30 min" },
+    { "id": "implants", "name": "Dental implants consultation", "price": "Free first visit", "duration": "30 min" },
+    { "id": "emergency", "name": "Urgent visit (pain, broken tooth)", "price": "USD 80", "duration": "30 min" }
+  ],
+  "faq": [
+    {
+      "q": "Do you accept insurance?",
+      "a": "We work with most major dental plans. Send us your plan name and we confirm coverage before the visit."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Cash, debit and credit cards. Payment plans are available for orthodontics and implants."
+    },
+    {
+      "q": "Do you treat children?",
+      "a": "Yes, from 4 years old, always with a parent or guardian."
+    },
+    {
+      "q": "Can I cancel or move my appointment?",
+      "a": "Yes, please let us know at least 24 hours in advance."
+    },
+    {
+      "q": "Is there parking?",
+      "a": "There is free street parking on the block and a paid car park 100 m away."
+    }
+  ],
+  "rules": {
+    "qualifiedLead": {
+      "requireName": true,
+      "requireService": true,
+      "requirePreferredTime": true
+    },
+    "handoffKeywords": ["human", "real person", "agent", "humano", "persona", "asesor", "operador"],
+    "handoffIntents": ["emergency", "complaint"],
+    "maxConsecutiveUnknown": 2,
+    "messages": {
+      "handoff": "Thanks! I'm passing your conversation to our team, someone will reply here shortly.",
+      "error": "Sorry, I'm having a technical issue. Our team will get back to you shortly."
+    }
+  }
+}
